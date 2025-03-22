@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Blog / Poemario";
 ---
 
 <html lang="es">
@@ -8,13 +8,20 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>Daplanet</h1>
+    <h1>{pageTitle}</h1>
     <p>Esta es solo una primera prueba</p>
     <a href="/">Inicio</a>
     <a href="/about/">Sobre mí</a>
     <a href="/blog/">Blog</a>
+    <h2>Blog</h2>
+    <h1>Aquí publicaré poemas</h1>
+    <ul>
+      <li><a href="/posts/post-1/">Publicación 1</a></li>
+      <li><a href="/posts/post-2/">Viaje solar</a></li>
+      <li><a href="/posts/post-3/">Viaje lunar</a></li>
+    </ul>
   </body>
 </html>
